@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  background-color: #f7f7f7;
+}
+
+.pop-up-ctr {
+  display: none;
+  height: auto;
+  width: 35rem;
+  margin: 0 auto;
+  padding: 3rem;
+  border-bottom: 0.5rem solid #1bac3f;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  text-align: center;
+  color: #1bac3f;
+  background-color: #fff;
+  box-shadow: 4px 0 10px -2px #aaa, -4px 0 10px -2px #aaa;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header {
+  height: 6rem;
+  width: 100vw;
+  padding: 1.6rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 0 20px -5px #aaa;
+}
+
+.logo-ctr {
+  font-size: 2rem;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: gray;
+  font-size: 1.4rem;
+  padding: 0.6rem;
+  margin: 0 1.2rem;
+  /* transition: all 0.2s; */
+}
+
+nav a:hover {
+  border-bottom: 1px solid slateblue;
+}
+
+.search-data {
+  display: none;
+}
+
+/* // Adding Website Form  */
+
+.adding-website-form {
+  height: auto;
+  max-width: 60rem;
+  margin: 5rem auto;
+  padding: 2rem;
+  box-shadow: 2px 2px 10px -5px #aaa, 2px -2px 10px -5px #aaa,
+    -2px 2px 10px -5px #aaa, -2px -2px 10px -5px #aaa;
+  color: #333;
+}
+
+.form-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form label {
+  display: block;
+  margin: 1rem 0;
+  color: #555;
+}
+
+form input {
+  display: block;
+  height: 4rem;
+  width: 100%;
+  padding: 0 1.6rem;
+  outline: none;
+  border: 1px solid #b5b5b5;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  color: #1bac3f;
+}
+
+.add-btn {
+  background-color: slateblue;
+  color: white;
+}
+
+.add-btn:hover {
+  background-color: rgb(122, 104, 238);
+  cursor: pointer;
+}
+
+/* // List.ejs */
+.website-details-ctr {
+  max-width: 80rem;
+  height: auto;
+  padding: 2rem;
+  margin: 2rem auto;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.website-name {
+  padding-bottom: 1rem;
+  margin-bottom: 1.6rem;
+  border-bottom: 1px solid #ebebeb;
+  color: #333;
+}
+
+.website-url {
+  display: block;
+  margin: 0.5rem 0;
+  text-decoration: none;
+  color: slateblue;
+}
+
+.website-description {
+  padding: 2rem;
+  color: #777;
+  border: 1px solid #dbdbdb;
+  border-left: 0.5rem solid slateblue;
+  margin: 3rem 0 5rem 0;
+}
+
+.website-genre {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: slateblue;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  border-top-right-radius: 2rem;
+}

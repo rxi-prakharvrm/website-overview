@@ -1,0 +1,76 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding Websites</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Pop up message -->
+    <div class="pop-up-ctr" id="pop-up-ctr">
+      <p>Added Successfully!</p>
+    </div>
+
+    <header>
+      <div class="logo-ctr">
+        <!-- <img src="img/" alt="logo" class="logo" /> -->
+        Website Manager
+      </div>
+      <nav>
+        <a href="/">HOME</a>
+        <a
+          href="/add"
+          style="color: slateblue; border-bottom: 1px solid slateblue"
+          >ADD WEBSITE</a
+        >
+        <a href="/remove">REMOVE WEBSITE</a>
+        <a href="/search">SEARCH WEBSITE</a>
+        <a href="/list">LIST WEBSITES</a>
+      </nav>
+    </header>
+
+    <form action="/add" method="get" class="adding-website-form">
+      <h1 class="form-heading">Adding Website</h1>
+
+      <label for="websiteName">Website Name: </label>
+      <input
+        type="text"
+        id="websiteName"
+        name="websiteName"
+        placeholder="Google"
+        required
+      /><br />
+
+      <label for="websiteUrl">Website Url: </label>
+      <input
+        type="text"
+        id="websiteUrl"
+        name="websiteUrl"
+        placeholder="www.google.com"
+        required
+      /><br />
+
+      <label for="websiteDescription">Website Description: </label>
+      <input
+        type="text"
+        id="websiteDescription"
+        name="websiteDescription"
+        placeholder="Currently, Google is the best Search Engine in the world."
+        required
+      /><br />
+
+      <label for="websiteGenre">Website Genre: </label>
+      <input
+        type="text"
+        id="websiteGenre"
+        name="websiteGenre"
+        placeholder="Search Engine"
+        required
+      /><br />
+      <input type="submit" value="Submit" class="add-btn" name="submit" />
+    </form>
+
+    <script src="js/app/js"></script>
+  </body>
+</html>

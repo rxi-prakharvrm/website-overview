@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listing Websites</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-ctr">
+        <!-- <img src="img/" alt="logo" class="logo" /> -->
+        Website Manager
+      </div>
+      <nav>
+        <a href="/">HOME</a>
+        <a href="/add">ADD WEBSITE</a>
+        <a href="/remove">REMOVE WEBSITE</a>
+        <a href="/search">SEARCH WEBSITE</a>
+        <a
+          href="/list"
+          style="color: slateblue; border-bottom: 1px solid slateblue"
+          >LIST WEBSITES</a
+        >
+      </nav>
+    </header>
+
+    <% if(websiteData.length > 0) { %> <% websiteData.forEach(item => { %>
+    <div class="website-details-ctr">
+      <h2 class="website-name"><%= item.websiteName %></h2>
+      <a href="" class="website-url"><%= item.websiteUrl %></a>
+      <p class="website-description"><%= item.websiteDescription %></p>
+      <p class="website-genre"><%= item.websiteGenre %></p>
+    </div>
+    <% }) %> <% } %>
+
+    <script src="js/app/js"></script>
+  </body>
+</html>

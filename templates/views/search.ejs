@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Searching Websites</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-ctr">
+        <!-- <img src="img/" alt="logo" class="logo" /> -->
+        Website Manager
+      </div>
+      <nav>
+        <a href="/">HOME</a>
+        <a href="/add">ADD WEBSITE</a>
+        <a href="/remove">REMOVE WEBSITE</a>
+        <a
+          href="/search"
+          style="color: slateblue; border-bottom: 1px solid slateblue"
+          >SEARCH WEBSITE</a
+        >
+        <a href="/list">LIST WEBSITES</a>
+      </nav>
+    </header>
+
+    <form action="/search" method="get">
+      <input
+        type="text"
+        id="websiteName"
+        name="websiteName"
+        placeholder="website name..."
+      /><br />
+      <input
+        type="submit"
+        value="Submit"
+        id="submit"
+        class="search-btn"
+        name="submit"
+      />
+    </form>
+
+    <div class="search-data">
+      <h1><%= websiteName %></h1>
+      <p><%= websiteUrl %></p>
+      <p><%= websiteDescription %></p>
+      <p><%= websiteGenre %></p>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

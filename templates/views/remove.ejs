@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Removing Websites</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-ctr">
+        <!-- <img src="img/" alt="logo" class="logo" /> -->
+        Website Manager
+      </div>
+      <nav>
+        <a href="/">HOME</a>
+        <a href="/add">ADD WEBSITE</a>
+        <a
+          href="/remove"
+          style="color: slateblue; border-bottom: 1px solid slateblue"
+          >REMOVE WEBSITE</a
+        >
+        <a href="/search">SEARCH WEBSITE</a>
+        <a href="/list">LIST WEBSITES</a>
+      </nav>
+    </header>
+
+    <form action="/remove" method="get">
+      <input
+        type="text"
+        id="websiteName"
+        name="websiteName"
+        placeholder="website name..."
+      /><br />
+      <input type="submit" value="Submit" id="submit" name="submit" />
+    </form>
+
+    <script src="js/app/js"></script>
+  </body>
+</html>
